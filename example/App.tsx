@@ -1,6 +1,6 @@
 import React from 'react';
-// import { Button, Divider } from '../src';
-import { Button, Divider } from '../dist';
+import { Button, Divider } from '../src';
+// import { Button, Divider } from '../dist';
 
 export default () => {
   return (
