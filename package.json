@@ -1,15 +1,25 @@
 {
-  "name": "my-packages-name",
+  "name": "packages-name",
   "version": "0.0.1",
   "type": "module",
-  "main": "./dist/my-packages.umd.cjs",
-  "module": "./dist/my-packages.js",
+  "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "description": "这是你组件的描述！",
+  "keywords": [
+    "react",
+    "vue"
+  ],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "license": "MIT",
   "repository": {
     "type": "https",
     "url": "https://github.com/tntd/vite-react-ts-npm-scaffold"
@@ -21,22 +31,9 @@
       "url": "https://github.com/tntd"
     }
   ],
-  "files": [
-    "dist"
-  ],
-  "exports": {
-    ".": {
-      "import": "./dist/my-packages.js",
-      "require": "./dist/my-packages.umd.cjs"
-    }
-  },
   "dependencies": {
     "classnames": "^2.3.2",
     "lodash-es": "^4.17.21"
-  },
-  "peerDependencies": {
-    "react": ">=18.2.0",
-    "react-dom": ">=18.2.0"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.3",
@@ -63,6 +60,11 @@
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^25.0.0",
     "typescript": "^5.2.2",
-    "vite": "^4.4.9"
+    "vite": "^4.4.9",
+    "vite-plugin-libcss": "^1.1.1"
+  },
+  "peerDependencies": {
+    "react": ">=18.2.0",
+    "react-dom": ">=18.2.0"
   }
 }

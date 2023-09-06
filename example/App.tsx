@@ -1,9 +1,10 @@
 import React from 'react';
-import { Button, Divider } from '../src';
+// import { Button, Divider } from '../src';
+import { Button, Divider } from '../dist';
 
-function App() {
+export default () => {
   return (
-    <div className="App">
+    <div style={{ width: '800px', margin: '30px auto' }}>
       <h1>Vite + React 创建组件库</h1>
       <Divider />
       <section>
@@ -11,6 +12,4 @@ function App() {
       </section>
     </div>
   );
-}
-
-export default App;
+};

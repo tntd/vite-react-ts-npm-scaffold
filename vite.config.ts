@@ -2,6 +2,8 @@ import { defineConfig } from 'vite';
 import path from 'path';
 import react from '@vitejs/plugin-react';
 import typescript from '@rollup/plugin-typescript';
+import libCss from 'vite-plugin-libcss';
+
 
 function resolve(str: string) {
   return path.resolve(__dirname, str);
@@ -11,6 +13,7 @@ function resolve(str: string) {
 export default defineConfig({
   plugins: [
     react(),
+    libCss(),
     typescript({
       target: 'es5',
       rootDir: resolve('src/'),
@@ -28,10 +31,11 @@ export default defineConfig({
     outDir: 'dist',
     // 防止 vite 将 rgba() 颜色转化为 #RGBA 十六进制
     cssTarget: 'chrome61',
+    cssCodeSplit:true,
     lib: {
       entry: resolve('src/index.ts'),
-      name: 'my-packages',
-      fileName: 'my-packages',
+      name: 'index',
+      fileName: 'index',
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
