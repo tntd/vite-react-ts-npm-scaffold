@@ -1,6 +1,5 @@
 {
   "name": "my-packages-name",
-  "private": true,
   "version": "0.0.1",
   "type": "module",
   "main": "./dist/my-packages.umd.cjs",
@@ -11,6 +10,17 @@
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "repository": {
+    "type": "https",
+    "url": "https://github.com/tntd/vite-react-ts-npm-scaffold"
+  },
+  "contributors": [
+    {
+      "name": "Rookie",
+      "email": "example@example.com",
+      "url": "https://github.com/tntd"
+    }
+  ],
   "files": [
     "dist"
   ],
