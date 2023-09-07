@@ -1,18 +1,31 @@
 ## vite-react-ts-npm-scaffold
 
 #### 安装依赖
-```
+```bash
 yarn
+# or
+npm install
 ```
 
 #### 开发组件（example）
-```
-yarn dev
+```bash
+npm start
+# or
+yarn start
 ```
 
 #### 组件打包
-```
+```bash
+npm run build
+# or
 yarn build
+```
+
+#### 组件发布
+```bash
+npm run publish
+# or
+yarn publish
 ```
 
 ## 发布组件到npm
@@ -25,7 +38,4 @@ npm publish
 
 # 对于作用域公共包，使用 
 npm publish --access=public
-
-# 这里我们用publish命令发布
-npm publish
 ```

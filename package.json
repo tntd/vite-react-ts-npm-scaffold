@@ -14,9 +14,9 @@
     "./*": "./*"
   },
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "publish": "npm publish --access=public"
   },
   "description": "这是你组件的描述！",
   "keywords": [
@@ -73,7 +73,7 @@
     "vite-plugin-libcss": "^1.1.1"
   },
   "peerDependencies": {
-    "react": ">=18.2.0",
-    "react-dom": ">=18.2.0"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   }
 }
